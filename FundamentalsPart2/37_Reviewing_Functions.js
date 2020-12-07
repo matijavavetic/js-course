@@ -1,6 +1,14 @@
+// Function declaration
+function calcAge(birthYear) {
+    return 2037 - birthYear;
+}
+
+// Function expression
 const calcAge = function (birthYear) {
     return 2037 - birthYear;
 }
+
+const calcAge = birthYear => 2037 - birthYear;
 
 const yearsUntilRetirement = function (birthYear, firstName) {
     const age = calcAge(birthYear);
