@@ -1,13 +1,14 @@
-// Function declaration
+// Function declaration (fnc can be used before it's declared)
 function calcAge(birthYear) {
     return 2037 - birthYear;
 }
 
-// Function expression
+// Function expression (function value stored in a variable)
 const calcAge = function (birthYear) {
     return 2037 - birthYear;
 }
 
+// Arrow function (no this keyword)
 const calcAge = birthYear => 2037 - birthYear;
 
 const yearsUntilRetirement = function (birthYear, firstName) {
