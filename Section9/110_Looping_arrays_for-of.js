@@ -39,8 +39,8 @@ for (const item of menu) {
 }
 
 // To get current iteration as array
-for (const item of menu.entires()) {
-    console.log(`${item[0] + 1}: ${item[1]}`);
+for (const [i, el] of menu.entires()) {
+    console.log(`${i + 1}: ${el}`);
 }
 
 console.log([...menu.entries()]);
