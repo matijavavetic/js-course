@@ -45,3 +45,6 @@ console.log(swiss);
 const flightData = [583, 'George'];
 book.apply(swiss, flightData);
 console.log(swiss);
+
+// Apply not used anymore
+book.call(swiss, ...flightData);
