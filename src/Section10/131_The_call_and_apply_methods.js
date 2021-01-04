@@ -40,3 +40,8 @@ const swiss = {
 
 book.call(swiss, 212, 'MAry');
 console.log(swiss);
+
+// Apply method - does not receive list of arguments, but takes array of data
+const flightData = [583, 'George'];
+book.apply(swiss, flightData);
+console.log(swiss);
